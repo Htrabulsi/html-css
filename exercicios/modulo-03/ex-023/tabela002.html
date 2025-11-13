@@ -24,20 +24,48 @@
         text-align: right;
     }
 
+    caption {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 10px;
+        background-color: lightgray;
+    }
+
     thead, tfoot {
         background-color: gray;
         color: white;
     }
 
-
 </style>
+
+<!-- 
+ANATOMIA PARA TABELAS GRANDES
+
+<table>  = onde todos os elementos da tabela seram colocados;
+    <caption> =  é a legenda da tabela;
+    <thead> = é a cabeça da tabela (cabeçalho);
+        <tr> = linha da tabela (r = row)
+            <th> = Título da coluna (ou referente à coluna)
+                <td> = Dados da coluna
+    <tbody> = é o corpo da tabela (conteúdo)
+        <tr> = 
+            <th> = 
+                <td> =
+    <tfoot> = é o pé da tabela (rodapé)
+        <tr> = 
+            <th> = 
+                <td> =
+-->
+
 <body>
     <h1>Uso da tabela grande</h1>
+
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -153,7 +181,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>210.147.125</strong></td>
             </tr>
         </tfoot>
