@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela - desafio 14</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h1 {
+        font: 1.5em sans-serif;
+        text-align: center;
+        padding: 10px;
+        width: 380px;
+        background-color: lightgray;
+    }
+
+    table {
+        border-collapse: collapse;
+    }
+
+    th, td {
+        border: 1px solid darkgray;
+        padding: 10px;
+        text-align: center;
+    }
+
+    thead {
+        background-color: lightgray;
+    }
+
+</style>
+<body>
+    <h1>Tabelas - Desafio 14</h1>
+<table>
+    <thead>
+        <tr>
+            <th scope="col" rowspan="2">Área</th>
+            <th scope="col" rowspan="2">Disciplina</th>
+            <th scope="colgroup" colspan="2">Notas</th>      
+            <th scope="col" rowspan="2">Média</th>
+        </tr>
+        <tr>
+            <th scope="col">Nota 1</th>
+            <th scope="col">Nota 2</th>   
+        </tr>
+     </thead>
+     <tbody>
+        <tr>
+            <th rowspan="4">Exatas</th>
+            <td>Matemática</td>
+            <td>a</td>
+            <td>b</td>
+            <td>c</td>
+        </tr>
+        <tr>
+            <td>Física</td>
+            <td>d</td>
+            <td>e</td>
+            <td>f</td>
+        </tr>
+        <tr>
+            <td>Química</td>
+            <td>g</td>
+            <td>h</td>
+            <td>i</td>
+        </tr>
+        <tr>
+            <td>Biologia</td>
+            <td>j</td>
+            <td>k</td>
+            <td>l</td>
+        </tr>
+        <tr>
+            <th colspan="4" style="text-align: left; font-weight: bold;background-color: lightgrey;">Média Exatas</th>
+            <td style="font-weight: bold;background-color: lightgrey;">10.0</td>
+        </tr>
+        <tr>
+            <th scope="rowgroup" rowspan="2">Humanas</th>
+            <td>História</td>
+            <td>m</td>
+            <td>n</td>
+            <td>o</td>
+        </tr>
+        <tr>
+            <td>Geografia</td>
+            <td>p</td>
+            <td>q</td>
+            <td>r</td>
+        </tr>
+        <tr>
+            <th scope="row" colspan="4" style="text-align: left; font-weight: bold; background-color: lightgray;" bold >Média de Humanas</th>
+            <td style="text-align: center; font-weight: bold; background-color: lightgrey;"  >10.0</td>
+        </tr>
+
+
+     </tbody>
+</table>
+    
+</body>
+</html>
