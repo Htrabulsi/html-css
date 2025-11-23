@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexble Box</title>
+    <style>
+        body, html {
+            margin: 5px;
+        }
+        /* Comportamento Padrão */
+        div.conteiner {
+            background-color: lightsalmon;
+            height: 100px;
+            text-align: center;
+        
+            /* flex-flow: row nowrap; (Forma de shorthand ou flex-flow) */
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+        div.conteiner-2 {
+            background-color: lightsalmon;
+            height: 100px;
+            /* flex-flow: row wrap; (Forma de shorthand ou flex-flow) */
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        div.conteiner-3 {
+            background-color: lightsalmon;
+            height: 100px;
+            /* flex-flow: row wrap-reverse; (Forma de shorthand ou flex-flow) */
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap-reverse;
+        }
+        
+        div.conteiner-4 {
+            background-color: lightsalmon;
+            height: 100px;
+            /* flex-flow: row-reverse wrap; (Forma de shorthand ou flex-flow) */
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap;
+        }
+
+        div.conteiner-5 {
+            background-color: lightsalmon;
+            height: 100px;
+            /* flex-flow: row-reverse wrap-reverse; (Forma de shorthand ou flex-flow) */
+            display: flex;
+            flex-direction: row-reverse;
+            flex-wrap: wrap-reverse;
+        }
+
+        div.conteiner-6 {
+            background-color: lightsalmon;
+            height: 100px;
+            /* flex-flow: row-reverse wrap-reverse; (Forma de shorthand ou flex-flow) */
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        div.item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 5px;
+            margin: 2px;
+        }
+
+        div.item1 {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            padding: 5px;
+            margin: 2px;
+            flex: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox - padrão</h1>
+    <div class="conteiner">
+        <div class="item1">Exemplo de bloco A</div>
+        <div class="item1">Exemplo de bloco B</div>
+        <div class="item1">Exemplo de bloco C</div>
+        <div class="item1">Exemplo de bloco D</div>
+        <div class="item1">Exemplo de bloco E</div>
+        <div class="item1">Exemplo de bloco F</div>
+        <div class="item1">Exemplo de bloco G</div>        
+    </div>
+    <h1>Flexbox - row/wrap</h1>
+    <div>
+        <div class="conteiner-2">
+        <div class="item">Exemplo de bloco A</div>
+        <div class="item">Exemplo de bloco B</div>
+        <div class="item">Exemplo de bloco C</div>
+        <div class="item">Exemplo de bloco D</div>
+        <div class="item">Exemplo de bloco E</div>
+        <div class="item">Exemplo de bloco F</div>
+        <div class="item">Exemplo de bloco G</div>
+    </div>      
+
+    <h1>Flexbox - row/wrap-reverse</h1>
+    <div>
+        <div class="conteiner-3">
+        <div class="item">Exemplo de bloco A</div>
+        <div class="item">Exemplo de bloco B</div>
+        <div class="item">Exemplo de bloco C</div>
+        <div class="item">Exemplo de bloco D</div>
+        <div class="item">Exemplo de bloco E</div>
+        <div class="item">Exemplo de bloco F</div>
+        <div class="item">Exemplo de bloco G</div>
+    </div>      
+
+    <h1>Flexbox - row-reverse/wrap</h1>
+    <div>
+        <div class="conteiner-4">
+        <div class="item">Exemplo de bloco A</div>
+        <div class="item">Exemplo de bloco B</div>
+        <div class="item">Exemplo de bloco C</div>
+        <div class="item">Exemplo de bloco D</div>
+        <div class="item">Exemplo de bloco E</div>
+        <div class="item">Exemplo de bloco F</div>
+        <div class="item">Exemplo de bloco G</div>
+    </div>
+
+    <h1>Flexbox - row-reverse/wrap-reverse</h1>
+    <div>
+        <div class="conteiner-5">
+        <div class="item">Exemplo de bloco A</div>
+        <div class="item">Exemplo de bloco B</div>
+        <div class="item">Exemplo de bloco C</div>
+        <div class="item">Exemplo de bloco D</div>
+        <div class="item">Exemplo de bloco E</div>
+        <div class="item">Exemplo de bloco F</div>
+        <div class="item">Exemplo de bloco G</div>
+    </div>
+
+    <h1>Flexbox - row/wrap com os itens "filhos" flex: auto</h1>
+    <div>
+        <div class="conteiner-5">
+        <div class="item1">Exemplo de bloco A</div>
+        <div class="item1">Exemplo de bloco B</div>
+        <div class="item1">Exemplo de bloco C</div>
+        <div class="item1">Exemplo de bloco D</div>
+        <div class="item1">Exemplo de bloco E</div>
+        <div class="item1">Exemplo de bloco F</div>
+        <div class="item1">Exemplo de bloco G</div>
+    </div> 
+</body>
+</html>
