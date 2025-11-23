@@ -5,42 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexble Box</title>
     <style>
-        div.conteiner {
-            background-color: lightsalmon;
-            height: 300px;
-
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-around;
-            align-items: center;
-            
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
         }
 
-        div.item {
-            background-color: lightskyblue;
-            border: 1px solid black;
-            height: 100px;
-            width: 100px;
-            
+        body {
+            background-color: lightsalmon;
+        }
+
+        main {
+            background-color: lightgreen;
+            height: 300px;
+            width: 100vw;
             display: flex;
-            align-items: center;
+            flex-flow: row nowrap;
             justify-content: center;
+            align-items: center;
+        }
 
-
-
+        section {
+            background-color: lightseagreen;
+            height: 200px;
+            width: 200px;
+            display: flex;
         }
 
     </style>
 </head>
 <body>
-    <div class="conteiner">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>        
-    </div>
+    <main>
+        <section>
+            <h1>Tela de login</h1>
+        </section>
+
+
+    </main>
 </body>
 </html>
