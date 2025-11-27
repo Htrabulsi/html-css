@@ -10,13 +10,19 @@
             height: 250px;
 
             display: grid;
-            grid-template-columns: auto auto auto;
-            grid-template-rows: auto auto auto ;
+            /* grid-template-columns: auto auto auto; */
+            /* grid-template-rows: auto auto auto ; */
+            /* shorthand dos grid-tamplate rows e columns, nessa sequencia */
+            grid-template: repeat(3, auto) / repeat(3, auto);
             gap: 5px;
-            align-items: normal;
-            justify-items: normal;
-            align-content: normal;
-            justify-content: normal;
+            /* align-items: start; */
+            /* justify-items: center; */
+            /* Shorthand align-items e justify-items, nessa sequencia */
+            place-items: start center;
+            /* align-content: space-between; */
+            /* justify-content: end; */
+            /* Shorthand align-content e justify-content, nessa sequencia */
+            place-content: space-between end;
         }
 
         div.item {
@@ -34,6 +40,7 @@
         <div class="item">E</div>
         <div class="item">F</div>
         <div class="item">G</div>
+        <div class="item">H</div>
     </div>
 </body>
 </html>
